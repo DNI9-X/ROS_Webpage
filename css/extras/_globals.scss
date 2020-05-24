@@ -14,3 +14,18 @@ a {
   text-decoration: none;
   color: var(--white);
 }
+// scroll to top button
+.scrollToTop {
+  position: fixed;
+  bottom: 30px;
+  border-radius: 25px;
+  right: 10px;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  background: var(--white);
+  &:hover {
+    box-shadow: 6px 7px 23px rgba(22, 22, 22, 0.164);
+  }
+}

@@ -17,6 +17,23 @@ a {
   color: var(--white);
 }
 
+.scrollToTop {
+  position: fixed;
+  bottom: 30px;
+  border-radius: 25px;
+  right: 10px;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  background: var(--white);
+}
+
+.scrollToTop:hover {
+  -webkit-box-shadow: 6px 7px 23px rgba(22, 22, 22, 0.164);
+          box-shadow: 6px 7px 23px rgba(22, 22, 22, 0.164);
+}
+
 .btn {
   padding: 1rem 2rem;
   border-radius: 3px;
@@ -271,7 +288,8 @@ a {
 }
 
 #download {
-  margin: 7rem 0;
+  margin: 7rem auto;
+  width: 95%;
 }
 
 #download .wrapper {
@@ -290,7 +308,7 @@ a {
           align-items: center;
   position: relative;
   margin: 0 auto;
-  width: 60rem;
+  max-width: 60rem;
   height: 18rem;
   background: linear-gradient(107deg, #0062f4 -0.4%, #26fff2 106.4%);
   border-radius: 10px;
@@ -340,22 +358,5 @@ footer .footer-content .icon-group i:hover {
 
 footer .footer-content .icon-group i:not(:last-child) {
   margin-right: 0.5rem;
-}
-
-.scrollToTop {
-  position: fixed;
-  bottom: 30px;
-  border-radius: 25px;
-  right: 10px;
-  outline: none;
-  border: none;
-  padding: 1rem;
-  cursor: pointer;
-  background: var(--white);
-}
-
-.scrollToTop:hover {
-  -webkit-box-shadow: 6px 7px 23px rgba(22, 22, 22, 0.164);
-          box-shadow: 6px 7px 23px rgba(22, 22, 22, 0.164);
 }
 /*# sourceMappingURL=style.css.map */

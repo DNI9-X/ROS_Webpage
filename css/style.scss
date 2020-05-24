@@ -103,7 +103,8 @@
 
 // DOWNLOAD SECTION
 #download {
-  margin: 7rem 0;
+  margin: 7rem auto;
+  width: 95%;
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -111,7 +112,7 @@
     align-items: center;
     position: relative;
     margin: 0 auto;
-    width: 60rem;
+    max-width: 60rem;
     height: 18rem;
     background: linear-gradient(107deg, #0062f4 -0.4%, #26fff2 106.4%);
     border-radius: 10px;
@@ -149,21 +150,5 @@ footer {
         margin-right: 0.5rem;
       }
     }
-  }
-}
-
-// scroll to top button
-.scrollToTop {
-  position: fixed;
-  bottom: 30px;
-  border-radius: 25px;
-  right: 10px;
-  outline: none;
-  border: none;
-  padding: 1rem;
-  cursor: pointer;
-  background: var(--white);
-  &:hover {
-    box-shadow: 6px 7px 23px rgba(22, 22, 22, 0.164);
   }
 }
