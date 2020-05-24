@@ -1,132 +1,14 @@
+@import "extras/globals";
+@import "extras/buttons";
+@import "extras/cards";
+@import "extras/section";
+
 //variables
 :root {
   --primaryColor: #0062f4;
   --secondaryColor: #26fff2;
   --white: #f3f3f3;
   --dark: #212b34;
-}
-
-//GLOBALS
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-}
-
-body,
-html {
-  scroll-behavior: smooth;
-}
-
-// Button global styles
-.btn {
-  padding: 1rem 2rem;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-.primary-btn {
-  background-color: var(--white);
-  outline: none;
-  border: none;
-  margin-right: 1rem;
-  color: var(--dark);
-  transition: transform 0.5s ease;
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 2px 4px 27px rgba(17, 17, 18, 0.158);
-  }
-}
-.secondary-btn {
-  padding: 0.9rem 2rem;
-  border: 1px solid var(--white);
-  background-color: transparent;
-  color: var(--white);
-}
-a {
-  text-decoration: none;
-  color: var(--white);
-}
-
-// common section styles
-.section-intro {
-  text-align: center;
-  margin: 2rem auto;
-  width: 60%;
-}
-.section-name {
-  color: var(--primaryColor);
-  font-style: italic;
-  font-weight: 700;
-  font-size: 0.8rem;
-  line-height: 32px;
-  letter-spacing: 0.05em;
-  &::before {
-    content: "";
-    height: 3px;
-    width: 2.5rem;
-    display: inline-block;
-    margin-right: 0.3rem;
-    background-color: var(--primaryColor);
-    transform: translateY(-3px);
-  }
-}
-.section-title {
-  font-weight: 700;
-  font-size: 2.2rem;
-  line-height: 50px;
-  letter-spacing: 0.02em;
-  color: var(--dark);
-}
-.section-desc {
-  font-weight: normal;
-  font-size: 1rem;
-  text-align: center;
-  letter-spacing: 0.01em;
-  padding: 1.5rem 0;
-  color: #585858;
-}
-
-// common card styles
-.card-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 5rem 0;
-}
-.card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-  border-radius: 10px;
-  margin: 1rem 2rem;
-  padding: 0 1.2rem;
-  transition: transform 0.7s ease;
-  &:hover {
-    box-shadow: 5px 20px 43px rgba(14, 14, 49, 0.15);
-    transform: scale(1.05) !important;
-  }
-}
-.card-icon {
-  height: 30%;
-  margin: 1rem 0;
-}
-.card-title {
-  color: var(--dark);
-  margin-bottom: 1rem;
-}
-.card-desc {
-  text-align: center;
-  font-weight: normal;
-  font-size: 1rem;
-  letter-spacing: 0.01em;
-  color: #000000a1;
 }
 
 // HEADER STYLES
@@ -206,8 +88,7 @@ a {
         margin: 1rem 0;
       }
       .designation {
-        width: 5rem;
-        height: 1.5rem;
+        padding: 0.2rem 1rem;
         margin-top: 2rem;
         border-radius: 30px;
         background-color: lighten($color: #0062f4, $amount: 45%);
@@ -233,7 +114,7 @@ a {
     width: 60rem;
     height: 18rem;
     background: linear-gradient(107deg, #0062f4 -0.4%, #26fff2 106.4%);
-    border-radius: 15px;
+    border-radius: 10px;
     .section-title {
       margin-top: 4rem;
       margin-bottom: 1.5rem;
@@ -246,10 +127,35 @@ a {
   }
 }
 
+// FOOTER
+footer {
+  width: 90%;
+  margin: 1rem auto;
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      font-weight: 600;
+      font-style: italic;
+      letter-spacing: 1px;
+    }
+    .icon-group i {
+      cursor: pointer;
+      &:hover {
+        color: var(--primaryColor);
+      }
+      &:not(:last-child) {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
 // scroll to top button
 .scrollToTop {
   position: fixed;
-  bottom: 10px;
+  bottom: 30px;
   border-radius: 25px;
   right: 10px;
   outline: none;

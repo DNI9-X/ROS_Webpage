@@ -1,10 +1,3 @@
-:root {
-  --primaryColor: #0062f4;
-  --secondaryColor: #26fff2;
-  --white: #f3f3f3;
-  --dark: #212b34;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +9,12 @@
 body,
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
 }
 
 .btn {
@@ -50,54 +49,6 @@ html {
   border: 1px solid var(--white);
   background-color: transparent;
   color: var(--white);
-}
-
-a {
-  text-decoration: none;
-  color: var(--white);
-}
-
-.section-intro {
-  text-align: center;
-  margin: 2rem auto;
-  width: 60%;
-}
-
-.section-name {
-  color: var(--primaryColor);
-  font-style: italic;
-  font-weight: 700;
-  font-size: 0.8rem;
-  line-height: 32px;
-  letter-spacing: 0.05em;
-}
-
-.section-name::before {
-  content: "";
-  height: 3px;
-  width: 2.5rem;
-  display: inline-block;
-  margin-right: 0.3rem;
-  background-color: var(--primaryColor);
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
-}
-
-.section-title {
-  font-weight: 700;
-  font-size: 2.2rem;
-  line-height: 50px;
-  letter-spacing: 0.02em;
-  color: var(--dark);
-}
-
-.section-desc {
-  font-weight: normal;
-  font-size: 1rem;
-  text-align: center;
-  letter-spacing: 0.01em;
-  padding: 1.5rem 0;
-  color: #585858;
 }
 
 .card-container {
@@ -160,6 +111,56 @@ a {
   font-size: 1rem;
   letter-spacing: 0.01em;
   color: #000000a1;
+}
+
+.section-intro {
+  text-align: center;
+  margin: 2rem auto;
+  width: 60%;
+}
+
+.section-name {
+  color: var(--primaryColor);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+}
+
+.section-name::before {
+  content: "";
+  height: 3px;
+  width: 2.5rem;
+  display: inline-block;
+  margin-right: 0.3rem;
+  background-color: var(--primaryColor);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 50px;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+
+.section-desc {
+  font-weight: normal;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0.01em;
+  padding: 1.5rem 0;
+  color: #585858;
+}
+
+:root {
+  --primaryColor: #0062f4;
+  --secondaryColor: #26fff2;
+  --white: #f3f3f3;
+  --dark: #212b34;
 }
 
 .header {
@@ -253,8 +254,7 @@ a {
 }
 
 #team .card-container .card .designation {
-  width: 5rem;
-  height: 1.5rem;
+  padding: 0.2rem 1rem;
   margin-top: 2rem;
   border-radius: 30px;
   background-color: #dbe9ff;
@@ -293,7 +293,7 @@ a {
   width: 60rem;
   height: 18rem;
   background: linear-gradient(107deg, #0062f4 -0.4%, #26fff2 106.4%);
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 #download .wrapper .section-title {
@@ -307,9 +307,44 @@ a {
   bottom: -40px;
 }
 
+footer {
+  width: 90%;
+  margin: 1rem auto;
+}
+
+footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-content p {
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+footer .footer-content .icon-group i {
+  cursor: pointer;
+}
+
+footer .footer-content .icon-group i:hover {
+  color: var(--primaryColor);
+}
+
+footer .footer-content .icon-group i:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
 .scrollToTop {
   position: fixed;
-  bottom: 10px;
+  bottom: 30px;
   border-radius: 25px;
   right: 10px;
   outline: none;

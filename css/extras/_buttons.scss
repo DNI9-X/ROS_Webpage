@@ -1,0 +1,25 @@
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.primary-btn {
+  background-color: var(--white);
+  outline: none;
+  border: none;
+  margin-right: 1rem;
+  color: var(--dark);
+  transition: transform 0.5s ease;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 4px 27px rgba(17, 17, 18, 0.158);
+  }
+}
+.secondary-btn {
+  padding: 0.9rem 2rem;
+  border: 1px solid var(--white);
+  background-color: transparent;
+  color: var(--white);
+}

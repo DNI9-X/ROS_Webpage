@@ -1,0 +1,37 @@
+.section-intro {
+  text-align: center;
+  margin: 2rem auto;
+  width: 60%;
+}
+.section-name {
+  color: var(--primaryColor);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  &::before {
+    content: "";
+    height: 3px;
+    width: 2.5rem;
+    display: inline-block;
+    margin-right: 0.3rem;
+    background-color: var(--primaryColor);
+    transform: translateY(-3px);
+  }
+}
+.section-title {
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 50px;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+.section-desc {
+  font-weight: normal;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0.01em;
+  padding: 1.5rem 0;
+  color: #585858;
+}
