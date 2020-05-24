@@ -55,6 +55,12 @@ a {
   color: var(--white);
 }
 
+.section-intro {
+  text-align: center;
+  margin: 2rem auto;
+  width: 60%;
+}
+
 .section-name {
   color: var(--primaryColor);
   font-style: italic;
@@ -90,6 +96,68 @@ a {
   letter-spacing: 0.01em;
   padding: 1.5rem 0;
   color: #585858;
+}
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 5rem 0;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  border-radius: 10px;
+  margin: 1rem 2rem;
+  padding: 0 1.2rem;
+  -webkit-transition: -webkit-transform 0.7s ease;
+  transition: -webkit-transform 0.7s ease;
+  transition: transform 0.7s ease;
+  transition: transform 0.7s ease, -webkit-transform 0.7s ease;
+}
+
+.card:hover {
+  -webkit-box-shadow: 5px 20px 43px rgba(19, 19, 20, 0.15);
+          box-shadow: 5px 20px 43px rgba(19, 19, 20, 0.15);
+  -webkit-transform: scale(1.05) !important;
+          transform: scale(1.05) !important;
+}
+
+.card-icon {
+  height: 30%;
+  margin: 1rem 0;
+}
+
+.card-title {
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+.card-desc {
+  text-align: center;
+  font-weight: normal;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  color: #000000a1;
 }
 
 .header {
@@ -172,67 +240,49 @@ a {
   width: 100%;
 }
 
-#features .feature-intro {
-  text-align: center;
-  margin: 2rem auto;
-  width: 60%;
+#features .card-container .card {
+  min-width: 20rem;
 }
 
-#features .feature-cards {
+#team .card-container .card {
+  min-width: 15rem;
+  padding: 1rem 2rem;
+}
+
+#team .card-container .card .card-icon {
+  height: 5rem;
+  margin: 1rem 0;
+}
+
+#team .card-container .card .designation {
+  width: 5rem;
+  height: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 30px;
+  background-color: #dbe9ff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 1rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--primaryColor);
 }
 
-#features .feature-cards .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 25%;
-  border-radius: 10px;
-  margin: 1rem 2rem;
-  padding: 0 1.5rem;
-  text-align: center;
-  -webkit-transition: -webkit-transform 0.7s ease;
-  transition: -webkit-transform 0.7s ease;
-  transition: transform 0.7s ease;
-  transition: transform 0.7s ease, -webkit-transform 0.7s ease;
-}
-
-#features .feature-cards .card:hover {
-  -webkit-box-shadow: 5px 20px 43px rgba(19, 19, 20, 0.15);
-          box-shadow: 5px 20px 43px rgba(19, 19, 20, 0.15);
-  -webkit-transform: scale(1.05) !important;
-          transform: scale(1.05) !important;
-}
-
-#features .feature-cards .card .card-icon {
-  height: 30%;
-  margin: 1rem 0;
-}
-
-#features .feature-cards .card .card-title {
-  color: var(--dark);
-  margin-bottom: 1rem;
-}
-
-#features .feature-cards .card .card-desc {
-  font-weight: normal;
-  font-size: 1rem;
-  letter-spacing: 0.01em;
-  color: #625b5b;
+.scrollToTop {
+  position: fixed;
+  bottom: 10px;
+  border-radius: 25px;
+  right: 10px;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  background: #f5f5f5;
+  -webkit-box-shadow: 6px 7px 23px rgba(22, 22, 22, 0.1);
+          box-shadow: 6px 7px 23px rgba(22, 22, 22, 0.1);
 }
 /*# sourceMappingURL=style.css.map */
