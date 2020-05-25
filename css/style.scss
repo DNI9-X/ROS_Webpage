@@ -124,6 +124,7 @@
     img {
       position: absolute;
       bottom: -40px;
+      z-index: -1;
     }
   }
 }
@@ -142,12 +143,10 @@ footer {
       letter-spacing: 1px;
     }
     .icon-group i {
-      cursor: pointer;
+      margin-right: 0.5rem;
+      color: var(--dark);
       &:hover {
         color: var(--primaryColor);
-      }
-      &:not(:last-child) {
-        margin-right: 0.5rem;
       }
     }
   }

@@ -31,4 +31,16 @@
       }
     }
   }
+
+  .section-intro {
+    margin: 2rem auto;
+    width: 90%;
+  }
+  #download .wrapper {
+    height: 15rem;
+    text-align: center;
+    .section-title {
+      font-size: 1.8rem;
+    }
+  }
 }

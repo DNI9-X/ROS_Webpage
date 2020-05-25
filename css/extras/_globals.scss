@@ -9,6 +9,7 @@ body,
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background-color: #ebf0f3;
 }
 a {
   text-decoration: none;
@@ -16,6 +17,7 @@ a {
 }
 // scroll to top button
 .scrollToTop {
+  display: none;
   position: fixed;
   bottom: 30px;
   border-radius: 25px;
@@ -28,4 +30,7 @@ a {
   &:hover {
     box-shadow: 6px 7px 23px rgba(22, 22, 22, 0.164);
   }
+}
+.show {
+  display: block !important;
 }
