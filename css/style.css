@@ -21,7 +21,7 @@ a {
 .scrollToTop {
   display: none;
   position: fixed;
-  bottom: 30px;
+  bottom: 50px;
   border-radius: 25px;
   right: 10px;
   outline: none;
@@ -38,6 +38,12 @@ a {
 
 .show {
   display: block !important;
+}
+
+.show-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 .btn {
@@ -214,6 +220,7 @@ a {
 }
 
 .header {
+  position: relative;
   height: 100vh;
   background: url("../images/hero_bg.svg") no-repeat;
   background-size: cover;
@@ -242,11 +249,71 @@ a {
 }
 
 .header nav .nav-items .nav-item {
+  position: relative;
   text-transform: uppercase;
   padding: 0 1rem;
   font-weight: 600;
   font-size: 0.8rem;
   letter-spacing: 1px;
+}
+
+.header .menu {
+  cursor: pointer;
+  display: none;
+}
+
+.header .menu-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  left: 0;
+  background: var(--white);
+  opacity: 0.95;
+  z-index: 1;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: menuSlideIn 0.7s ease-in-out;
+          animation: menuSlideIn 0.7s ease-in-out;
+}
+
+.header .menu-wrapper .menu-item {
+  margin: 1rem 0;
+}
+
+.header .menu-wrapper .menu-item a {
+  color: var(--dark);
+}
+
+@-webkit-keyframes menuSlideIn {
+  0% {
+    -webkit-transform: translateX(-30rem);
+            transform: translateX(-30rem);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes menuSlideIn {
+  0% {
+    -webkit-transform: translateX(-30rem);
+            transform: translateX(-30rem);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 .header .intro-container {
@@ -395,6 +462,9 @@ footer .footer-content .icon-group i:hover {
   .header nav .nav-items {
     display: none;
   }
+  .header .menu {
+    display: block;
+  }
   .header .intro-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -443,4 +513,3 @@ footer .footer-content .icon-group i:hover {
     font-size: 1.8rem;
   }
 }
-/*# sourceMappingURL=style.css.map */

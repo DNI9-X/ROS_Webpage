@@ -13,6 +13,7 @@
 
 // HEADER STYLES
 .header {
+  position: relative;
   height: 100vh;
   background: url("../images/hero_bg.svg") no-repeat;
   background-size: cover;
@@ -28,12 +29,46 @@
       list-style-type: none;
       align-items: center;
       .nav-item {
+        position: relative;
         text-transform: uppercase;
         padding: 0 1rem;
         font-weight: 600;
         font-size: 0.8rem;
         letter-spacing: 1px;
       }
+    }
+  }
+  .menu {
+    cursor: pointer;
+    display: none;
+  }
+  .menu-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    background: var(--white);
+    opacity: 0.95;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: menuSlideIn 0.7s ease-in-out;
+    .menu-item {
+      margin: 1rem 0;
+      a {
+        color: var(--dark);
+      }
+    }
+  }
+  @keyframes menuSlideIn {
+    0% {
+      transform: translateX(-30rem);
+    }
+    100% {
+      transform: translateX(0);
     }
   }
 
@@ -151,5 +186,6 @@ footer {
     }
   }
 }
+
 //
 @import "extras/responsive";

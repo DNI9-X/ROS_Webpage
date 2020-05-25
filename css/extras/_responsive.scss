@@ -3,7 +3,9 @@
     nav .nav-items {
       display: none;
     }
-
+    .menu {
+      display: block;
+    }
     .intro-container {
       flex-direction: column;
       .intro {

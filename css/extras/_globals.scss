@@ -19,7 +19,7 @@ a {
 .scrollToTop {
   display: none;
   position: fixed;
-  bottom: 30px;
+  bottom: 50px;
   border-radius: 25px;
   right: 10px;
   outline: none;
@@ -33,4 +33,7 @@ a {
 }
 .show {
   display: block !important;
+}
+.show-flex {
+  display: flex !important;
 }
