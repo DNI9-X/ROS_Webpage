@@ -386,4 +386,46 @@ footer .footer-content .icon-group i:hover {
 footer .footer-content .icon-group i:not(:last-child) {
   margin-right: 0.5rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .header nav .nav-items {
+    display: none;
+  }
+  .header .intro-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .intro-container .intro {
+    padding: 2rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  .header .intro-container .intro h1 {
+    font-size: 7vw;
+  }
+  .header .intro-container .intro .btn-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .intro-container .intro .btn-group .btn {
+    padding: 0.8rem 1.5rem;
+  }
+  .header .intro-container .hero-img {
+    width: 80%;
+  }
+  .header .intro-container .hero-img img {
+    -webkit-transform: translateY(-55px);
+            transform: translateY(-55px);
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
