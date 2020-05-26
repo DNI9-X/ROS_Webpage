@@ -15,11 +15,13 @@ let menu = document.querySelector(".menu");
 let menuWrapper = document.querySelector(".menu-wrapper");
 menu.addEventListener("click", () => {
   if (!menuWrapper.classList.contains("show-flex")) {
-    menuWrapper.classList.toggle("show-flex");
-  }
-});
-menuWrapper.addEventListener("click", () => {
-  if (menuWrapper.classList.contains("show-flex")) {
+    menuWrapper.classList.add("show-flex");
+  } else {
     menuWrapper.classList.remove("show-flex");
   }
 });
+// menuWrapper.addEventListener("click", () => {
+//   if (menuWrapper.classList.contains("show-flex")) {
+//     menuWrapper.classList.remove("show-flex");
+//   }
+// });
